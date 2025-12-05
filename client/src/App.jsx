@@ -1095,18 +1095,18 @@ function App({ onChangeLanguage }) {
                             </p>
                           ) : (
                             <p className="text-lg font-bold text-green-700">
-                              <strong>Required Amount:</strong> {result.volume} ml
+                              <strong>Jumlah yang Dibutuhkan:</strong> {result.volume} ml
                             </p>
                           )}
                           <p><strong>Obat:</strong> {result.obat.name}</p>
-                          <p><strong>Child's Weight:</strong> {result.weight} kg</p>
-                          <p><strong>Frequency:</strong> {result.frequency}</p>
-                          <p><strong>Maximum Daily:</strong> {result.maxDailyDosiss} dosiss</p>
+                          <p><strong>Berat Anak:</strong> {result.weight} kg</p>
+                          <p><strong>Frekuensi:</strong> {result.frequency}</p>
+                          <p><strong>Maksimum Harian:</strong> {result.maxDailyDosiss} dosis</p>
                           {/* NSAIDs Peringatan for Ibuprofen and Diclofenac */}
                           {(result.obat.ingredient === 'Ibuprofen' || result.obat.ingredient === 'Diclofenac') && (
                             <div className="mt-2 p-2 bg-orange-50 border border-orange-200 rounded-lg">
                               <p className="text-orange-800 text-sm font-medium">
-                                Do not combine ibuprofen syrup and diclofenac suppositories at the same time; leave 8 hours between them
+                                Jangan menggabungkan sirup ibuprofen dan supositoria diklofenak pada waktu yang sama; beri jarak 8 jam di antaranya
                               </p>
                             </div>
                           )}
@@ -1147,7 +1147,7 @@ function App({ onChangeLanguage }) {
                           }}
                           className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-2 rounded-lg shadow-md transition-colors duration-200">
                           <Info className="h-4 w-4 ml-2" />
-                          For FAQs and additional explanation, click here
+                          Untuk FAQ dan penjelasan tambahan, klik di sini
                         </Button>
                       </div>
                       
@@ -1189,10 +1189,10 @@ function App({ onChangeLanguage }) {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Info className="h-5 w-5 text-blue-600" />
-                    Comprehensive Drug Families Guide
+                    Panduan Lengkap Keluarga Obat
                   </CardTitle>
                   <CardDescription>
-                    Learn about different types of obats, how they work, and available brand names
+                    Pelajari tentang berbagai jenis obat, cara kerjanya, dan merek yang tersedia
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
@@ -1202,17 +1202,17 @@ function App({ onChangeLanguage }) {
                       <AccordionTrigger className="text-right">
                         <div className="flex items-center gap-2 md:gap-3">
                           <Pill className="h-5 w-5 text-blue-600" />
-                          <span className="text-lg font-semibold">Paracetamol Family</span>
+                          <span className="text-lg font-semibold">Keluarga Paracetamol</span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent className="space-y-6 pt-4">
                         <div className="bg-purple-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-purple-900 mb-3 flex items-center gap-2">
                             <Users className="h-4 w-4" />
-                            Popular Brand Names
+                            Merek Populer
                           </h4>
                           <div className="text-purple-800 text-sm mb-3">
-                            Available forms: <strong>suppositories, syrup, drops</strong>
+                            Bentuk tersedia: <strong>supositoria, sirup, tetes</strong>
                           </div>
                           
                           {/* Catatan about same concentration */}
@@ -1261,10 +1261,10 @@ function App({ onChangeLanguage }) {
                             <div className="bg-purple-50 p-4 rounded-lg">
                               <h4 className="font-semibold text-purple-900 mb-3 flex items-center gap-2">
                                 <Users className="h-4 w-4" />
-                                Popular Brand Names
+                                Merek Populer
                               </h4>
                               <div className="text-purple-800 text-sm mb-3">
-                                Available forms: <strong>Sirup</strong>
+                                Bentuk tersedia: <strong>Sirup</strong>
                               </div>
                               <div className="grid gap-2 text-purple-800 text-sm">
                                 <div>• Nurofen - Nurofen</div>
@@ -1279,10 +1279,10 @@ function App({ onChangeLanguage }) {
                             <div className="bg-purple-50 p-4 rounded-lg">
                               <h4 className="font-semibold text-purple-900 mb-3 flex items-center gap-2">
                                 <Users className="h-4 w-4" />
-                                Popular Brand Names
+                                Merek Populer
                               </h4>
                               <div className="text-purple-800 text-sm mb-3">
-                                Available forms: <strong>suppositories</strong>
+                                Bentuk tersedia: <strong>supositoria</strong>
                               </div>
                               <div className="grid gap-2 text-purple-800 text-sm">
                                 <div>• Voltaren - Voltaren</div>
@@ -1477,14 +1477,14 @@ function App({ onChangeLanguage }) {
                             <span className="text-blue-600 font-bold text-xs md:text-sm">1</span>
                           </div>
                           <span className="text-blue-800 font-semibold text-sm md:text-lg">
-                            What is the difference between paracetamol obats and (ibuprofen and diclofenac) obats?
+                            Apa perbedaan antara obat paracetamol dan obat (ibuprofen dan diclofenac)?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-blue-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-blue-800 text-sm md:text-base">
-                            Both are demam reducers and nyeri relievers. However, (ibuprofen and diclofenac) are considered stronger in reducing demam and nyeri than the paracetamol family.
+                            Keduanya adalah penurun demam dan pereda nyeri. Namun, (ibuprofen dan diclofenac) dianggap lebih kuat dalam menurunkan demam dan nyeri dibandingkan keluarga paracetamol.
                           </p>
                         </div>
                       </AccordionContent>
@@ -1498,14 +1498,14 @@ function App({ onChangeLanguage }) {
                             <span className="text-green-600 font-bold text-sm">2</span>
                           </div>
                           <span className="text-green-800 font-semibold text-sm md:text-lg">
-                            Is there an interaction between paracetamol and (ibuprofen and diclofenac) obats?
+                            Apakah ada interaksi antara paracetamol dan obat (ibuprofen dan diclofenac)?
                           </span>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="bg-green-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <p className="text-green-800">
-                            There is no interaction between them, and they can be taken at the same time, but your doctor may recommend a specific time between them, such as every 4 hours between paracetamol and ibuprofen, so you can give obats throughout the day.
+                            Tidak ada interaksi di antara keduanya, dan dapat diminum pada waktu yang sama, tetapi dokter Anda mungkin merekomendasikan waktu tertentu di antaranya, seperti setiap 4 jam antara paracetamol dan ibuprofen, sehingga Anda dapat memberikan obat sepanjang hari.
                           </p>
                         </div>
                       </AccordionContent>
@@ -1519,7 +1519,7 @@ function App({ onChangeLanguage }) {
                             <span className="text-orange-600 font-bold text-sm">3</span>
                           </div>
                           <span className="text-orange-800 font-semibold text-sm md:text-lg">
-                            Which obats should not be combined at the same time?
+                            Obat mana yang tidak boleh digabungkan pada waktu yang sama?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1527,10 +1527,10 @@ function App({ onChangeLanguage }) {
                         <div className="bg-orange-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-orange-800 space-y-2">
                             <p>
-                              <strong className="text-red-600">Do not combine obats containing Paracetamol</strong> at the same time - there must be 4-6 hours between them.
+                              <strong className="text-red-600">Jangan menggabungkan obat yang mengandung Paracetamol</strong> pada waktu yang sama - harus ada jarak 4-6 jam di antaranya.
                             </p>
                             <p>
-                              <strong className="text-red-600">And do not combine obats containing Ibuprofen (Brufen) or Diclofenac</strong> at the same time - there must be 8 hours between them.
+                              <strong className="text-red-600">Dan jangan menggabungkan obat yang mengandung Ibuprofen (Brufen) atau Diclofenac</strong> pada waktu yang sama - harus ada jarak 8 jam di antaranya.
                             </p>
                           </div>
                         </div>
@@ -1545,7 +1545,7 @@ function App({ onChangeLanguage }) {
                             <span className="text-teal-600 font-bold text-sm">4</span>
                           </div>
                           <span className="text-teal-800 font-semibold text-sm md:text-lg">
-                            Should obats be taken after eating or on an empty stomach?
+                            Apakah obat harus diminum setelah makan atau saat perut kosong?
                           </span>
                         </div>
                       </AccordionTrigger>
@@ -1553,10 +1553,10 @@ function App({ onChangeLanguage }) {
                         <div className="bg-teal-50 p-3 md:p-4 rounded-lg mr-0 md:mr-11">
                           <div className="text-teal-800 space-y-2">
                             <p>
-                              <strong className="text-blue-600">Obat Paracetamol</strong> can be taken on an empty stomach.
+                              <strong className="text-blue-600">Obat Paracetamol</strong> dapat diminum saat perut kosong.
                             </p>
                             <p>
-                              <strong className="text-red-600">Ibuprofen (Brufen) obats</strong> are preferably taken after food or a light meal.
+                              <strong className="text-red-600">Obat Ibuprofen (Brufen)</strong> sebaiknya diminum setelah makan atau makanan ringan.
                             </p>
                           </div>
                         </div>
@@ -1572,13 +1572,13 @@ function App({ onChangeLanguage }) {
               <Alert className="bg-red-50 border-red-200">
                 <AlertTriangle className="h-4 w-4 text-red-600" />
                 <AlertDescription className="text-red-800">
-                  <strong className="block mb-2">Important Safety Peringatans:</strong>
+                  <strong className="block mb-2">Peringatan Keselamatan Penting:</strong>
                   <ul className="list-disc space-y-1 text-sm" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                    <li>Never exceed the recommended dosis or allowed frequency</li>
-                    <li>Do not give more than one type of obat containing the same active ingredient</li>
-                    <li>Do not use obat for more than 3-5 days without medical consultation</li>
-                    <li>Ensure there is no allergy to the obat before use</li>
-                    <li>Keep all obats out of reach of anak-anak</li>
+                    <li>Jangan pernah melebihi dosis yang direkomendasikan atau frekuensi yang diizinkan</li>
+                    <li>Jangan memberikan lebih dari satu jenis obat yang mengandung bahan aktif yang sama</li>
+                    <li>Jangan menggunakan obat lebih dari 3-5 hari tanpa konsultasi medis</li>
+                    <li>Pastikan tidak ada alergi terhadap obat sebelum digunakan</li>
+                    <li>Jauhkan semua obat dari jangkauan anak-anak</li>
                   </ul>
                 </AlertDescription>
               </Alert>
