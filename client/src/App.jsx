@@ -1156,9 +1156,9 @@ function App({ onChangeLanguage }) {
                         <Alert className="bg-orange-50 border-orange-200">
                           <AlertTriangle className="h-4 w-4 text-orange-600" />
                           <AlertDescription className="text-orange-800">
-                            <strong>Important Peringatan:</strong>
+                            <strong>Peringatan Penting:</strong>
                             <ul className="list-disc mt-2 space-y-1" style={{listStylePosition: 'inside', direction: 'ltr', paddingLeft: '1.5rem'}}>
-                              <li>This calculator is for guidance only. Always consult a doctor before giving any obat to your anak. Do not exceed the recommended dosis and do not give obat for more than 3-5 days without medical consultation.</li>
+                              <li>Kalkulator ini hanya untuk panduan. Selalu konsultasikan dengan dokter sebelum memberikan obat apa pun kepada anak Anda. Jangan melebihi dosis yang direkomendasikan dan jangan memberikan obat lebih dari 3-5 hari tanpa konsultasi medis.</li>
                               {(() => {
                                 const ageValue = convertArabicToEnglish(age)
                                 const ageNum = parseFloat(ageValue)
