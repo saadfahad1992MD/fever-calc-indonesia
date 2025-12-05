@@ -10,7 +10,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/u
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion.jsx'
 import { AlertTriangle, Calculator, Info, X, ZoomIn, Pill, Flame, Shield, Clock, Users, CheckCircle, Linkedin } from 'lucide-react'
 import { LanguageToggle } from './components/LanguageToggle.jsx'
-import { ShareModalEnglish } from './components/ShareModalEnglish.jsx'
+import { ShareModalIndonesian } from './components/ShareModalIndonesian.jsx'
 import linkedinLogo from './assets/linkedin-logo.png'
 import { medicationsIndonesia } from './data/medicationsIndonesia.js'
 import './App.css'
@@ -1727,7 +1727,7 @@ function App({ onChangeLanguage }) {
       </footer>
       
       {/* Bagikan Modal */}
-      <ShareModalEnglish isOpen={isBagikanModalOpen} onClose={() => setIsBagikanModalOpen(false)} />
+      <ShareModalIndonesian isOpen={isBagikanModalOpen} onClose={() => setIsBagikanModalOpen(false)} />
     </div>
   )
 }
